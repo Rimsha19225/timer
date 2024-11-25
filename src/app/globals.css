@@ -2,20 +2,109 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.timer{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.container{
+  margin-top: 14%;
+  width: 40%;
+  height: 50vh;
+  background-color: bisque;
+  border-radius: 30px;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.timer_container{
+  /* justify-items: center; */
+  justify-content: center;
 }
+
+.heading{
+  margin-top: 20px;
+  font-size: 45px;
+  font-weight: bolder;
+  font-family: "Urbanist",;
+  text-shadow: -4px -1px 2px grey;
+  display: flex;
+  justify-content: center;
+}
+
+.heading:hover{
+  font-size: 47px;
+}
+
+.timer_box{
+  display: flex;
+  justify-content: center;
+  /* padding-top: -50px; */
+  /* margin: 50px; */
+  font-size: 100px;
+}
+
+.start{
+  margin-left: 3%;
+  width: 120px;
+  height: 60px;
+  color: bisque;
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: "Urbanist",;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: black;
+}
+
+.start:hover{
+  background-color: red;
+  height: 60px;
+  color: black;
+  font-size: 23px;
+  border-radius: 10px;
+}
+
+.stop{
+  margin-left: 100px;
+  width: 120px;
+  height: 60px;
+  color: bisque;
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: "Urbanist",;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: black;
+}
+
+.stop:hover{
+  background-color: red;
+  height: 60px;
+  color: black;
+  font-size: 23px;
+  border-radius: 10px;
+}
+
+.restart{
+  margin-left: 20px;
+  width: 120px;
+  height: 60px;
+  color: bisque;
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: "Urbanist",;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: black;
+}
+
+.restart:hover{
+  background-color: red;
+  color: black;
+  height: 60px;
+  font-size: 23px;
+  border-radius: 10px;
+}
+
