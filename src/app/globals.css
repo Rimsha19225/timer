@@ -19,7 +19,6 @@
 }
 
 .timer_container{
-  /* justify-items: center; */
   justify-content: center;
 }
 
@@ -33,78 +32,55 @@
   justify-content: center;
 }
 
-.heading:hover{
-  font-size: 47px;
-}
-
 .timer_box{
   display: flex;
   justify-content: center;
-  /* padding-top: -50px; */
-  /* margin: 50px; */
   font-size: 100px;
 }
 
-.start{
-  margin-left: 3%;
-  width: 120px;
-  height: 60px;
-  color: bisque;
-  font-size: 20px;
-  font-weight: bolder;
-  font-family: "Urbanist",;
-  border: 2px solid black;
-  border-radius: 20px;
-  background-color: black;
+.button_section{
+  display: flex;
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+  justify-content: center;
+  gap: 10px;
 }
 
-.start:hover{
-  background-color: red;
-  height: 60px;
-  color: black;
-  font-size: 23px;
+.stop, .restart, .start{
+  padding: 15px 20px;
+  background-color: black;
   border-radius: 10px;
+  color: antiquewhite;
 }
 
-.stop{
-  margin-left: 100px;
-  width: 120px;
-  height: 60px;
-  color: bisque;
-  font-size: 20px;
-  font-weight: bolder;
-  font-family: "Urbanist",;
-  border: 2px solid black;
-  border-radius: 20px;
-  background-color: black;
-}
-
-.stop:hover{
-  background-color: red;
-  height: 60px;
-  color: black;
-  font-size: 23px;
-  border-radius: 10px;
-}
-
-.restart{
-  margin-left: 20px;
-  width: 120px;
-  height: 60px;
-  color: bisque;
-  font-size: 20px;
-  font-weight: bolder;
-  font-family: "Urbanist",;
-  border: 2px solid black;
-  border-radius: 20px;
-  background-color: black;
-}
-
-.restart:hover{
+.stop:hover, .restart:hover, .start:hover{
   background-color: red;
   color: black;
-  height: 60px;
-  font-size: 23px;
-  border-radius: 10px;
+}
+
+@media (max-width: 768px){
+  .container{
+    margin-top: 40%;
+    width: 90%;
+    height: 45vh;
+  }
+  .heading{
+    margin-top: 1rem;
+    font-size: 30px;
+  }
+  .timer_box{
+    margin-top: 0.6rem;
+    font-size: 70px;
+  }
+  .start{
+    margin-left: 1%;
+  }
+  .button_section{
+    margin-top: 1rem;
+  }
+  .stop, .restart, .start{
+    padding: 10px 15px;
+  }
 }
 

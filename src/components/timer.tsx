@@ -19,7 +19,7 @@ const Countdown_Timer = () => {
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
-  }, []); // Empty dependency array to only run once
+  }, []);
 
   const stop = () => {
     if (timerRef.current) clearInterval(timerRef.current);
@@ -53,15 +53,11 @@ const Countdown_Timer = () => {
             {minutes < 10 ? '0' + minutes : minutes}:
             {seconds < 10 ? '0' + seconds : seconds}
           </h2>
-          <button className="stop" onClick={stop}>
-            Pause
-          </button>
-          <button className="restart" onClick={restart}>
-            Restart
-          </button>
-          <button className="start" onClick={start}>
-            Start
-          </button>
+          <div className='button_section'>
+            <button className="stop" onClick={stop}>Pause</button>
+            <button className="restart" onClick={restart}>Restart</button>
+            <button className="start" onClick={start}>Start</button>
+          </div>
         </div>
       </div>
     </div>
